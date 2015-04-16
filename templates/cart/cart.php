@@ -94,7 +94,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 								), $_product, false );
 							}
 
-							echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key );
+							echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item, $cart_item_key );
 						?>
 					</td>
 
@@ -116,7 +116,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 				<?php if ( WC()->cart->coupons_enabled() ) { ?>
 					<div class="coupon">
 
-						<label for="coupon_code"><?php _e( 'Coupon', 'woocommerce' ); ?>:</label> <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php _e( 'Coupon code', 'woocommerce' ); ?>" /> <input type="submit" class="button" name="apply_coupon" value="<?php _e( 'Apply Coupon', 'woocommerce' ); ?>" />
+						<lcaabel for="coupon_code"><?php _e( 'Coupon', 'woocommerce' ); ?>:</label> <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php _e( 'Coupon code', 'woocommerce' ); ?>" /> <input type="submit" class="button" name="apply_coupon" value="<?php _e( 'Apply Coupon', 'woocommerce' ); ?>" />
 
 						<?php do_action( 'woocommerce_cart_coupon' ); ?>
 
